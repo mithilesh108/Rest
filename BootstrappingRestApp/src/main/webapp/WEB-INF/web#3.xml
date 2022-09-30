@@ -1,0 +1,25 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>jersy</servlet-name>
+		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+		<!--#3 if we define Application class implements then this parameter is not required here only pass resource class
+		here container will create all resource obj as res per obj model-->
+		<init-param>
+		   <param-name>jersey.config.server.provider.classnames</param-name>
+		   <param-value>com.tcs.resource.StockReport,com.tcs.resource.WeatherReport</param-value>
+		</init-param>
+		
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>jersy</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>
