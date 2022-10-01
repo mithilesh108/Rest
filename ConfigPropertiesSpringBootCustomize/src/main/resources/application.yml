@@ -1,0 +1,11 @@
+emp: 
+  id: 200
+  name: mithiles
+  status: true
+  salary: 12345.54321
+
+user: 
+  id: 201
+  name1: kumar
+  status: true
+  salary: 12345.54321
