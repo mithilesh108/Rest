@@ -1,0 +1,13 @@
+HTTP Status Code : Spring MVC Application
+1) 400 - Bad Request -> if in JSP page send date value and if its pattern is not handle in beans class or handler method will get this error.
+2) 401 - Unauthorized  -> user's entered credentials is not currect
+3) 403 - Forbidden -> User can login the website using credentials but some services are not allow to access.
+4) 404 - Not Found -> based on action value if handler method not definr then will get this error. 
+5) 405 – Method Not Allowed -> if in jsp page, form tag submitting get method and if in controller handler method having post method then 405 error will come
+                            -> or if you dont pass @PathParam value in url in this case also 405 error will come
+6)
+
+
+//@FormParm works only POST request
+	//@DefaultValue we can use with @QueryParam and @FormParam
+	// 
