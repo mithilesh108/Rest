@@ -1,0 +1,3 @@
+	//@FormParm works only POST request
+	//@DefaultValue we can use with @QueryParam and @FormParam
+	// if you dont pass @PathParam then 405 error will come
